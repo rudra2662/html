@@ -1,0 +1,183 @@
+/* CSS for the website page */
+body {
+            font-family: Arial, sans-serif;
+            background-color: floralwhite;
+        }
+        /* to set the background color of the navagation bar */
+        nav {
+            padding: 20px;
+      background-color: orange;
+    }
+    /* to align the text in the top of the page at left side */
+    .navbar {
+    position: absolute;
+     font-weight: bold;
+     font-size: 18px;
+     top: 14px;
+    }
+    /* to align the navagation bar in the top of the page at right side */
+    a {
+        position: fixed;
+      font-weight: bold;
+      font-size: 18px;
+      color: white;
+        top: 20px;
+    }
+    a:hover {
+        color: black;
+    }
+    b:nth-of-type(1) {
+    left: 20px;
+    }
+    a:nth-of-type(1) {
+      right: 260px;
+    }
+    a:nth-of-type(2) {
+    right: 20px;
+    }
+    a:nth-of-type(3) {
+      right: 130px;
+    }
+    /* Typing effect for text entered in the left side of the page */
+    .header {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(20, end) forwards;
+    font-family: monospace;
+    font-size: 20px;
+}
+    .header1 {
+        width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(20, end) forwards;
+    font-family: monospace;
+    font-size: 20px;
+    animation-delay: 1.5s;
+    }
+    .header2 {
+        width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(20, end) forwards;
+    font-family: monospace;
+    font-size: 20px;
+    animation-delay: 3s;
+    }
+    .header3 {
+        width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(20, end) forwards;
+    font-family: monospace;
+    font-size: 20px;
+    animation-delay: 4.5s;
+    }
+    /* Typing effect */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 900px }
+    }
+    
+    /* showing the images in the right side of the page */
+    img {
+        position: absolute;
+        top: 125px;
+        width: 350px;
+        height: 350px;
+        object-fit: contain;
+        opacity: 0;
+        border: 5px solid lightsteelblue;
+        border-radius: 10px;
+        animation: slide 9s infinite;
+        }
+        img:nth-of-type(1){
+        right: 20px;
+    }
+    img:nth-of-type(2){
+        right: 20px;
+    }
+    img:nth-of-type(3){
+        right: 20px;
+    }
+    /* Animation for images */
+        img:nth-of-type(1) {
+      animation-delay: 0s;
+    }
+    img:nth-of-type(2) {
+      animation-delay: 3s;
+    }
+    img:nth-of-type(3) {
+      animation-delay: 6s;
+    }
+
+    @keyframes slide {
+      0%   { opacity: 0; }
+      10%  { opacity: 1; }
+      30%  { opacity: 1; }
+      40%  { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    /* it is used to show the text in the center of the page */
+    .text {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 24px;
+        margin-top: 30px;
+        text-align: center;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* to align the text pogition */
+    }
+        .text:nth-of-type(1) {
+        position: fixed;
+    }
+    /* showing the gray box for contact information */
+    .contact {
+        max-width: 400px;
+        max-height: 600px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 24px;
+        background-color: lightgray;
+        text-align: center;
+        border: 1.5px solid black;
+        left: 0;
+        position: relative;
+    }
+    /* to alingn the contact box */
+    .contact:nth-of-type(1) {
+        right: 20px;
+    }
+    .about {
+        max-width: 400px;
+        max-height: 600px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 24px;
+        background-color: lightgray;
+        text-align: center;
+        border: 1.5px solid black;
+        bottom: 128px;
+        left: 402px;
+        position: relative;
+    }
+    .about:nth-of-type(1) {
+        right: 0;
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        white-space: nowrap;
+        font-size: 18px;
+        animation: slideLeft 10s linear infinite; /* Slide animation */
+    }
+
+/* Animation keyframes */
+@keyframes slideLeft {
+  0% {
+    right: 100%; /* Start from right screen */
+  }
+  100% {
+    right: -30%; /* Move tovards left screen */
+  }
+}
